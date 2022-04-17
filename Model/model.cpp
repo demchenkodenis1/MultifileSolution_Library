@@ -1,8 +1,8 @@
 #include "model.h"
 
 namespace Model {
-	const Reader example{ 123567, {"John", "Abraham", "Smith", true, 32}, true, 12255};
-	const Book example{ 12255, 13, "War and Peace", true, 123567};
+	const Reader example{ {"John", "Abraham", "Smith", true, 32}, 123567, true, 12255};
+	//const Book example{ 12255, 13, "War and Peace", true, 123567};
 	namespace {
 		static std::vector<Reader> g_readers;
 		static std::vector<Book> b_books;

@@ -39,8 +39,10 @@ namespace Model {
 		int bookId;
 
 	};
-	//extern const Reader example;
+	extern const Reader example;
+
 	//extern const Book example;
+
 	void AddNewReader(...);
 
 	void AddNewBook(...);
