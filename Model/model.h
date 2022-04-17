@@ -31,6 +31,14 @@ namespace Model {
 		bool bookLendingStatus;
 		int readerId;
 	};
+
+	struct Author
+	{
+		int authorId;
+		Human who;
+		int bookId;
+
+	};
 	//extern const Reader example;
 	//extern const Book example;
 	void AddNewReader(...);
@@ -38,8 +46,12 @@ namespace Model {
 	void AddNewBook(...);
 
 	void IssueAbook(...);
+
 	void returnAbook(...);
 
+	void searchTheBook(...);
+
+	void searchTheReader(...);
 
 	void Model();
 }
