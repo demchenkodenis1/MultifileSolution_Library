@@ -3,6 +3,15 @@
 #define MODEL_H
 #include <vector>
 #include <iostream>
+#include <algorithm>
+#include <ctime>
+#include <chrono>
+using std::chrono::system_clock;
+using std::chrono::system_clock;
+
+
+
+//std::chrono::milliseconds sec = duration.count();
 
 
 namespace Model {
@@ -30,6 +39,8 @@ namespace Model {
 		char title[255];
 		bool bookLendingStatus;
 		int readerId;
+		system_clock::time_point registration;
+		std::chrono::year production;
 	};
 
 	struct Author
@@ -39,9 +50,35 @@ namespace Model {
 		int bookId;
 
 	};
+
+	struct AbonRec {
+		int readerId;
+		int bookId;
+		system_clock::time_point dateOfleft;
+		std::chrono::day duration;
+		system_clock::time_point return_;
+
+	};
+
+	struct BookRecord
+	{
+		system_clock::time_point registration;//дата выдачи
+		int readerId;
+		int bookId;
+		int days;//срок выдачи
+		int count;
+
+	};
+
+	void f00() {
+		Book book;
+		/*user conversation*/
+		book.registration = system_clock::now();
+	}
+
 	extern const Reader example;
 
-	//extern const Book example;
+	extern const Book example2;
 
 	void AddNewReader(...);
 
