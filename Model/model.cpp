@@ -37,7 +37,7 @@ namespace Model {
 
 	}
 
-	int searchTheBook(Book)
+	int searchTheBook(Book(title))
 	{
 		int bookId = 0;
 		return bookId;
