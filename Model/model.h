@@ -6,6 +6,11 @@
 #include <algorithm>
 #include <ctime>
 #include <chrono>
+#include <filesystem>
+#include <cstring>
+#include <string>
+
+
 using std::chrono::system_clock;
 using std::chrono::system_clock;
 
