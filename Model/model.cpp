@@ -10,6 +10,14 @@ namespace Model {
 		using BalanceRecord = pair <int, int>*/
 
 	}
+	
+	
+	Human::year age(const Human obj)
+	{
+		return Human::year();
+	}
+	
+	
 	void AddNewReader(...)
 	{
 		//

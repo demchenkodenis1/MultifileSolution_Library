@@ -28,7 +28,16 @@ namespace Model {
 		char surname[255];
 		bool gender;
 		int age;
+		std::string name;
+		std::string patrinomic;
+		std::string surname;
+
+		using year = int;
+		year birth;
 	};
+
+	Human::year age(const Human obj);
+
 	struct Reader
 	{
 		Human who;
